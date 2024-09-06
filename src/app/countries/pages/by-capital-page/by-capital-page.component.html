@@ -3,8 +3,13 @@
 <div class="row">
   <div class="col">
     <!-- SearchBox -->
-    <shared-search-box placeholder="Busqueda por capital" (onValue)="searchByCapital($event)"
-      #txtInput></shared-search-box>
+    <!-- (onValue)="searchByCapital($event)" -->
+    <shared-search-box
+    placeholder="Busqueda por capital"
+      #txtInput
+      (onDebonunce)="searchByCapital($event)"
+      [initialValue]="initialValue"
+      ></shared-search-box>
   </div>
 </div>
 
